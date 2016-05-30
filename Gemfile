@@ -33,6 +33,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.4.0'
+  gem 'guard-rspec', '~> 4.6.5'
+  gem 'spring-commands-rspec'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
@@ -45,3 +49,6 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'capybara', '~> 2.7.1'
+end
