@@ -20,6 +20,7 @@
             <li><%= link_to "Sign In", new_user_session_path if not user_signed_in? %></li>
           <% end %>
           <% if user_signed_in? %>
+          <li><%= link_to "My Lounge", user_exercises_path(current_user) %></li>
           <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
             <div class="navbar-right">
               <p class="navbar-text">
