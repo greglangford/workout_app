@@ -7,6 +7,7 @@ gem 'bootstrap-sass', '~>3.3.6'
 gem 'autoprefixer-rails', '~>5.2.1'
 gem 'devise', '~>4.1.1'
 gem 'jquery-ui-rails', '5.0.5'
+gem 'will_paginate-bootstrap'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
