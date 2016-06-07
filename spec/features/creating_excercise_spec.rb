@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.feature "Creating exercise" do
   before do
-    @user = User.create!(email: "example@example.com", password: "password")
+    @user = User.create!(first_name: "Example", last_name: "Example", email: "example@example.com", password: "password")
     login_as(@user)
   end
 
@@ -15,7 +15,7 @@ RSpec.feature "Creating exercise" do
 
     fill_in "Duration", with: 70
     fill_in "Workout Details", with: "Weight lifting"
-    fill_in "Activity date", with: Date.now
+    fill_in "Activity date", with: Date.today
     click_button "Create Exercise"
 
     expect(page).to have_content("Exercise has been created")
